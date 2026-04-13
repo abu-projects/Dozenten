@@ -1,0 +1,685 @@
+<html lang="de" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>afs:// Akademie - Call for Speakers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Caveat:wght@500&amp;display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0fdfa; /* Light teal background */
+        }
+
+        .font-handwriting {
+            font-family: 'Caveat', cursive;
+        }
+
+        /* Hide details marker for custom accordion */
+        details>summary {
+            list-style: none;
+        }
+
+        details>summary::-webkit-details-marker {
+            display: none;
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f0fdfa;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+
+        /* Subtle noise texture background */
+        .bg-noise {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+            opacity: 0.015;
+            pointer-events: none;
+        }
+
+        /* Premium Glass Card */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            box-shadow: 0 10px 40px -10px rgba(13, 148, 136, 0.08);
+        }
+
+        /* Dynamic wave background */
+        .bg-wave {
+            background: linear-gradient(135deg, #0d9488 0%, #2dd4bf 50%, #10b981 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
+        }
+    </style>
+</head>
+
+<body class="text-slate-700 antialiased selection:bg-teal-500/30 selection:text-teal-900 overflow-x-hidden relative">
+    <div class="fixed inset-0 bg-noise z-[-1]"></div>
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-50 border-b border-teal-500/10 bg-white/70 backdrop-blur-xl">
+        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="/" class="flex items-center gap-2">
+                <img src="logo-afs.svg" alt="afs:// Academy" class="h-8 w-auto">
+            </a>
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+                <a href="#benefits" class="hover:text-teal-600 transition-colors">Vorteile</a>
+                <a href="#audience" class="hover:text-teal-600 transition-colors">Targeting</a>
+                <a href="#process" class="hover:text-teal-600 transition-colors">Ablauf</a>
+                <a href="#faq" class="hover:text-teal-600 transition-colors">FAQ</a>
+            </div>
+            <a href="#apply" class="text-sm font-semibold text-white bg-teal-600 hover:bg-teal-700 px-5 py-2.5 rounded-full transition-all shadow-md shadow-teal-500/20">
+                Bewerben
+            </a>
+        </div>
+    </nav>
+
+    <!-- SECTION 1: HERO (VIBRANT HEADER LIKE IMAGE) -->
+    <section class="relative pt-48 pb-40 overflow-hidden flex flex-col items-center justify-center text-center">
+        <!-- The Wave Background -->
+        <div class="absolute inset-0 bg-wave z-0"></div>
+        
+        <div class="relative z-10 max-w-5xl mx-auto px-6">
+            <img src="logo-afs.svg" alt="afs://" class="h-12 w-auto mx-auto mb-10 opacity-90 brightness-0 invert">
+            
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/20 border border-white/30 text-xs font-bold text-white mb-8 backdrop-blur-sm uppercase tracking-widest">
+                Call for Speakers 2026
+            </div>
+            
+            <h1 class="text-5xl lg:text-7xl font-extrabold tracking-tight text-white mb-6 leading-[1.1]">
+                TEILE DEIN WISSEN MIT DER <br class="hidden lg:block">
+                <span class="text-white/90">DIGITALEN ELITE.</span>
+            </h1>
+            
+            <p class="text-lg lg:text-xl text-teal-50 mb-12 max-w-2xl mx-auto font-medium opacity-90">
+                Setz Dich in Szene: Reiche Deinen Vortrag ein und präsentiere Dich vor unserer 8.000 Mitglieder starken Community.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+                <a href="#apply" class="px-8 py-4 bg-white text-teal-700 font-bold text-sm rounded-full shadow-2xl shadow-teal-900/10 hover:scale-105 transition-transform uppercase tracking-widest">
+                    Jetzt Case einreichen
+                </a>
+            </div>
+
+            <!-- Trust Indicators -->
+            <div class="mt-20 pt-10 border-t border-white/10 flex flex-col items-center">
+                <p class="text-[10px] text-teal-50/70 border border-teal-50/20 px-3 py-1 rounded-full uppercase tracking-widest mb-8 font-bold">Trusted by experts from</p>
+                <div class="flex flex-wrap justify-center items-center gap-8 lg:gap-16">
+                    <img src="imgs/1/Zalando_logo.png" alt="Zalando" class="h-6 lg:h-8 w-auto">
+                    <img src="imgs/1/hub_spot.png" alt="HubSpot" class="h-5 lg:h-7 w-auto">
+                    <img src="imgs/1/Snocks_Logo_-_black.png.webp" alt="Snocks" class="h-4 lg:h-6 w-auto">
+                    <img src="imgs/1/american_express.png" alt="American Express" class="h-6 lg:h-8 w-auto">
+                    <img src="imgs/1/allianz.png" alt="Allianz" class="h-6 lg:h-8 w-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: PERSONAL LETTER -->
+    <section class="py-24 relative z-20">
+        <div class="max-w-3xl mx-auto px-6">
+            <div class="bg-white rounded-[2rem] p-10 md:p-14 shadow-2xl shadow-teal-900/5 relative overflow-hidden group border border-teal-100/50">
+                <!-- Subtle decorative corner -->
+                <div class="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-teal-50 to-transparent opacity-100 rounded-bl-full transition-all group-hover:scale-110"></div>
+                
+                <h2 class="text-4xl font-extrabold tracking-tight text-slate-900 mb-8 leading-tight uppercase">HI <span class="animate-pulse inline-block origin-bottom-right">👋</span></h2>
+                
+                <div class="space-y-8 text-lg text-slate-600 leading-relaxed font-medium">
+                    <p>
+                        wir suchen ständig nach den hellsten Köpfen und den spannendsten Cases der digitalen Wirtschaft. Wenn Du echte Insights, datengetriebene Strategien oder innovative Ansätze hast, bist Du hier genau richtig.
+                    </p>
+                    <p>
+                        Wir bieten Dir keine normale Bühne, sondern ein High-End Studio-Erlebnis und eine Community, die wirklich zuhört. Kein Sales-Pitch, sondern pure Wertschöpfung. Wenn Du lieferst, sorgen wir dafür, dass Du als absolute Autorität in Deinem Bereich wahrgenommen wirst.
+                    </p>
+                    <p>
+                        Lass uns gemeinsam die Standards für digitale Weiterbildung neu definieren.
+                    </p>
+                </div>
+                
+                <div class="mt-12 pt-8 border-t border-slate-100">
+                    <p class="font-handwriting text-3xl text-teal-600">Dein afs:// Team</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: KEY METRICS GRID -->
+    <section class="py-24 relative bg-white/50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 mb-4 uppercase">Eckdaten zur afs://</h2>
+                <p class="text-lg text-slate-500 font-medium">Warum es sich lohnt, Teil unseres Netzwerks zu werden.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Metric 1 -->
+                <div class="group bg-white border border-teal-100 rounded-3xl p-10 hover:shadow-xl hover:shadow-teal-900/5 transition-all duration-500 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-teal-50 rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <iconify-icon icon="solar:users-group-rounded-bold" class="text-4xl text-teal-500 mb-6"></iconify-icon>
+                    <h3 class="text-5xl font-black tracking-tighter text-slate-900 mb-2">8.000+</h3>
+                    <p class="text-xs font-bold text-slate-400 uppercase tracking-widest">Mitglieder</p>
+                </div>
+                
+                <!-- Metric 2 -->
+                <div class="group bg-white border border-teal-100 rounded-3xl p-10 hover:shadow-xl hover:shadow-teal-900/5 transition-all duration-500 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-teal-50 rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <iconify-icon icon="solar:graph-up-bold" class="text-4xl text-teal-500 mb-6"></iconify-icon>
+                    <h3 class="text-5xl font-black tracking-tighter text-slate-900 mb-2">2.000+</h3>
+                    <p class="text-xs font-bold text-slate-400 uppercase tracking-widest">Neue / Jahr</p>
+                           <!-- Metric 4 -->
+                <div class="group bg-white border border-teal-100 rounded-3xl p-10 hover:shadow-xl hover:shadow-teal-900/5 transition-all duration-500 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-teal-50 rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <iconify-icon icon="solar:videocamera-record-bold" class="text-4xl text-teal-500 mb-6"></iconify-icon>
+                    <h3 class="text-5xl font-black tracking-tighter text-slate-900 mb-2">600+</h3>
+                    <p class="text-xs font-bold text-slate-400 uppercase tracking-widest">Vorträge</p>
+                </div>
+                <!-- Metric 3 -->
+                <div class="group bg-white border border-teal-100 rounded-3xl p-10 hover:shadow-xl hover:shadow-teal-900/5 transition-all duration-500 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-teal-50 rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <iconify-icon icon="solar:microphone-bold" class="text-4xl text-teal-500 mb-6"></iconify-icon>
+                    <h3 class="text-5xl font-black tracking-tighter text-slate-900 mb-2">300+</h3>
+                    <p class="text-xs font-bold text-slate-400 uppercase tracking-widest">Speaker</p>
+                </div>
+       </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: QUOTE -->
+    <section class="py-32 relative flex items-center justify-center overflow-hidden">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 w-full h-full">
+            <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+                alt="Audience" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-teal-900/85"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-teal-950 via-transparent to-teal-950"></div>
+        </div>
+
+        <div class="relative z-10 max-w-4xl mx-auto px-6 text-center">
+            <iconify-icon icon="solar:quote-left-bold" class="text-6xl text-teal-400/30 mb-8 block mx-auto"></iconify-icon>
+            <h2 class="text-3xl md:text-5xl font-extrabold tracking-tight text-white leading-tight mb-10">
+                "Die afs:// ist ohne Zweifel ein Highlight unter den digitalen Bildungsplattformen."
+            </h2>
+            <div class="flex flex-col items-center justify-center gap-4">
+                <div class="w-20 h-20 rounded-full border-2 border-teal-500/30 p-1 bg-white">
+                    <img src="imgs/1/martin-brosy-img.png"
+                        alt="Speaker" class="w-full h-full rounded-full object-cover">
+                </div>
+                <div class="text-center">
+                    <p class="text-xl font-black text-white tracking-tight uppercase">Martin Brosy</p>
+                    <p class="text-xs font-bold text-teal-400 uppercase tracking-widest">Experte & Dozent</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: BENEFITS -->
+    <section id="benefits" class="py-32 bg-slate-50/50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 mb-4 uppercase">Deine Vorteile als Speaker</h2>
+                <p class="text-lg text-slate-500 max-w-2xl mx-auto font-medium">Warum Top-Experten ihre Insights auf unserer Plattform teilen.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Benefit 1 -->
+                <div class="bg-white border border-teal-100 p-10 rounded-3xl hover:shadow-xl hover:shadow-teal-900/5 transition-all group">
+                    <div class="w-14 h-14 rounded-2xl bg-teal-500/10 flex items-center justify-center mb-8 group-hover:bg-teal-500 group-hover:text-white transition-all duration-300">
+                        <iconify-icon icon="solar:star-bold" class="text-2xl"></iconify-icon>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-4 tracking-tight uppercase">Expertenstatus</h3>
+                    <p class="text-slate-600 font-medium leading-relaxed">Positioniere Dich als anerkannter Experte in einer der renommiertesten SEO-Akademien Deutschlands.</p>
+                </div>
+
+                <!-- Benefit 2 -->
+                <div class="bg-white border border-teal-100 p-10 rounded-3xl hover:shadow-xl hover:shadow-teal-900/5 transition-all group">
+                    <div class="w-14 h-14 rounded-2xl bg-teal-500/10 flex items-center justify-center mb-8 group-hover:bg-teal-500 group-hover:text-white transition-all duration-300">
+                        <iconify-icon icon="solar:users-group-rounded-bold" class="text-2xl"></iconify-icon>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-4 tracking-tight uppercase">Reichweite</h3>
+                    <p class="text-slate-600 font-medium leading-relaxed">Erreiche tausende SEO-Profis und Entscheider aus unserem exklusiven Netzwerk.</p>
+                </div>
+
+                <!-- Benefit 3 -->
+                <div class="bg-white border border-teal-100 p-10 rounded-3xl hover:shadow-xl hover:shadow-teal-900/5 transition-all group">
+                    <div class="w-14 h-14 rounded-2xl bg-teal-500/10 flex items-center justify-center mb-8 group-hover:bg-teal-500 group-hover:text-white transition-all duration-300">
+                        <iconify-icon icon="solar:shield-star-bold" class="text-2xl"></iconify-icon>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-4 tracking-tight uppercase">Speaker Badge</h3>
+                    <p class="text-slate-600 font-medium leading-relaxed">Erhalte ein exklusives digitales Badge, das Du auf LinkedIn und Deiner Website nutzen kannst.</p>
+                </div>
+
+                <!-- Benefit 4 -->
+                <div class="bg-white border border-teal-100 p-10 rounded-3xl hover:shadow-xl hover:shadow-teal-900/5 transition-all group">
+                    <div class="w-14 h-14 rounded-2xl bg-teal-500/10 flex items-center justify-center mb-8 group-hover:bg-teal-500 group-hover:text-white transition-all duration-300">
+                        <iconify-icon icon="solar:camera-bold" class="text-2xl"></iconify-icon>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-4 tracking-tight uppercase">High-End Content</h3>
+                    <p class="text-slate-600 font-medium leading-relaxed">Wir zeichnen im Studio auf. Du erhältst Fotos und Snippets für Dein eigenes Personal Branding.</p>
+                </div>
+
+                <!-- Benefit 5 -->
+                <div class="bg-white border border-teal-100 p-10 rounded-3xl hover:shadow-xl hover:shadow-teal-900/5 transition-all group">
+                    <div class="w-14 h-14 rounded-2xl bg-teal-500/10 flex items-center justify-center mb-8 group-hover:bg-teal-500 group-hover:text-white transition-all duration-300">
+                        <iconify-icon icon="solar:share-circle-bold" class="text-2xl"></iconify-icon>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-4 tracking-tight uppercase">Elite Netzwerk</h3>
+                    <p class="text-slate-600 font-medium leading-relaxed">Werde Teil einer geschlossenen Gruppe von Top-Speakern und Branchenführern zum Austausch.</p>
+                </div>
+
+                <!-- Benefit 6 -->
+                <div class="bg-white border border-teal-100 p-10 rounded-3xl hover:shadow-xl hover:shadow-teal-900/5 transition-all group">
+                    <div class="w-14 h-14 rounded-2xl bg-teal-500/10 flex items-center justify-center mb-8 group-hover:bg-teal-500 group-hover:text-white transition-all duration-300">
+                        <iconify-icon icon="solar:key-minimalistic-bold" class="text-2xl"></iconify-icon>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-4 tracking-tight uppercase">Vollzugriff</h3>
+                    <p class="text-slate-600 font-medium leading-relaxed">Als Dankeschön erhältst Du kostenfreien Zugang zu allen Inhalten der Plattform, solange Dein Vortrag online ist.</p>
+                </div>
+            </div>
+
+            <div class="mt-20 text-center">
+                <a href="#apply" class="inline-flex items-center justify-center px-10 py-5 rounded-full bg-teal-600 text-white font-bold text-sm hover:bg-teal-700 transition-all shadow-xl shadow-teal-500/20 uppercase tracking-widest">
+                    Ich möchte meinen Vortrag einreichen
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6: BADGE -->
+    <section class="py-32 relative overflow-hidden flex flex-col items-center">
+        <!-- Glow behind badge -->
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-teal-500/10 rounded-full blur-[100px]"></div>
+
+        <div class="relative z-10 text-center px-6">
+            <!-- Simulated Badge Graphic -->
+            <div class="w-48 h-48 mx-auto mb-10 relative flex items-center justify-center">
+                <div class="absolute inset-0 bg-gradient-to-br from-teal-400 to-emerald-600 rounded-3xl rotate-12 opacity-20 blur-xl"></div>
+                <div class="w-32 h-32 bg-slate-900 border border-white/10 rounded-[2rem] flex items-center justify-center shadow-2xl relative z-10 rotate-3 transform hover:rotate-0 transition-transform duration-500">
+                    <div class="absolute inset-1 border border-white/5 rounded-[1.75rem]"></div>
+                    <div class="text-center">
+                        <iconify-icon icon="solar:verified-check-bold" class="text-4xl text-teal-400 mb-1"></iconify-icon>
+                        <p class="text-[10px] font-black text-white tracking-widest uppercase">Official</p>
+                        <p class="text-xs font-black text-teal-400 tracking-tight uppercase">Speaker</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="text-4xl font-extrabold tracking-tight text-slate-900 mb-6 uppercase">Ein Badge, das Vertrauen schafft</h2>
+            <p class="text-lg text-slate-500 max-w-lg mx-auto font-medium">
+                Nutze Dein offizielles Speaker-Badge für LinkedIn, Deine Website und Portfolios, um Deine Autorität sofort zu unterstreichen.
+            </p>
+        </div>
+    </section>
+
+    <!-- SECTION 7: TARGET AUDIENCE -->
+    <section id="audience" class="py-24 bg-white/30 border-y border-teal-100/50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="mb-20 text-center lg:text-left">
+                <h2 class="text-4xl font-extrabold tracking-tight text-slate-900 mb-4 uppercase">Wer Deinen Vortrag sieht</h2>
+                <p class="text-lg text-slate-500 font-medium">Unsere Audience besteht aus verifizierten Professionals.</p>
+            </div>
+
+            <!-- 1-over-2 Layout -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Top featured Card (Unternehmensart) -->
+                <div class="md:col-span-2 bg-white/50 p-10 rounded-[2.5rem] border border-teal-100 shadow-xl shadow-teal-900/5 flex flex-col items-center">
+                    <h3 class="w-full text-sm font-black text-slate-900 mb-10 flex items-center gap-2 uppercase tracking-widest">
+                        <iconify-icon icon="solar:pie-chart-2-bold" class="text-teal-500"></iconify-icon>
+                        Unternehmensart
+                    </h3>
+                    <div class="w-full max-w-2xl min-h-[300px] flex items-center justify-center">
+                        <img src="imgs/1/unternehmensart.svg" alt="Statistik Unternehmensart" class="w-full h-auto max-h-[350px] object-contain">
+                    </div>
+                </div>
+
+                <!-- Bottom Row: Column 1 (Unternehmensgröße) -->
+                <div class="bg-white/50 p-8 rounded-[2.5rem] border border-teal-100 shadow-xl shadow-teal-900/5 flex flex-col h-full">
+                    <h3 class="text-sm font-black text-slate-900 mb-8 flex items-center gap-2 uppercase tracking-widest">
+                        <iconify-icon icon="solar:chart-2-bold" class="text-teal-500"></iconify-icon>
+                        Unternehmensgröße
+                    </h3>
+                    <div class="flex-1 flex items-center justify-center min-h-[250px]">
+                        <img src="imgs/1/unternehmensgroesse-nach-mitarbeiteranzahl.svg" alt="Statistik Unternehmensgröße" class="w-full h-auto object-contain">
+                    </div>
+                </div>
+
+                <!-- Bottom Row: Column 2 (Nutzerzahlen) -->
+                <div class="bg-white/50 p-8 rounded-[2.5rem] border border-teal-100 shadow-xl shadow-teal-900/5 flex flex-col h-full">
+                    <h3 class="text-sm font-black text-slate-900 mb-8 flex items-center gap-2 uppercase tracking-widest">
+                        <iconify-icon icon="solar:tag-bold" class="text-teal-500"></iconify-icon>
+                        Nutzerzahlen
+                    </h3>
+                    <div class="flex-1 flex items-center justify-center min-h-[250px]">
+                        <img src="imgs/1/nutzerzahlen.svg" alt="Statistik Nutzerzahlen" class="w-full h-auto object-contain">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 8: STUDIO EXPERIENCE -->
+    <section class="py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+                <!-- Text -->
+                <div>
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-teal-500/10 border border-teal-500/20 text-[10px] font-black text-teal-700 mb-6 uppercase tracking-widest">
+                        <iconify-icon icon="solar:record-circle-bold" class="text-red-500 animate-pulse"></iconify-icon>
+                        Premium Production
+                    </div>
+                    <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 mb-8 leading-tight uppercase">
+                        High-End Studio <br>Recording
+                    </h2>
+                    <p class="text-lg text-slate-600 mb-10 font-medium leading-relaxed">
+                        Vergiss schlechte Webcams und wackelige Zoom-Calls. Wir produzieren Deinen Inhalt in einem High-End-Studio oder schicken Dir ein professionelles Remote-Setup. Du konzentrierst Dich voll auf Deinen Inhalt, wir kümmern uns um Licht, Ton und Post-Production.
+                    </p>
+                    <a href="#apply" class="group inline-flex items-center gap-3 px-8 py-4 bg-teal-600 text-white font-bold text-sm rounded-full transition-all hover:bg-teal-700 hover:shadow-xl hover:shadow-teal-500/20 uppercase tracking-widest">
+                        Jetzt Bewerben
+                        <iconify-icon icon="solar:arrow-right-bold" class="transition-transform group-hover:translate-x-1"></iconify-icon>
+                    </a>
+                </div>
+
+                <!-- Image Collage -->
+                <div class="grid grid-cols-2 gap-6 h-[550px]">
+                    <div class="space-y-6 h-full">
+                        <div class="h-[60%] rounded-[2rem] overflow-hidden bg-slate-100 border border-teal-100 shadow-lg shadow-teal-900/5">
+                            <img src="https://images.unsplash.com/photo-1598550880863-4e8aa3d0edb4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="Studio Experience 1" class="w-full h-full object-cover hover:scale-110 transition-all duration-700">
+                        </div>
+                        <div class="h-[40%] rounded-[2rem] overflow-hidden bg-slate-100 border border-teal-100 shadow-lg shadow-teal-900/5">
+                            <img src="https://images.unsplash.com/photo-1581368135153-a506cf13b1e1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="Studio Experience 2" class="w-full h-full object-cover hover:scale-110 transition-all duration-700">
+                        </div>
+                    </div>
+                    <div class="rounded-[2rem] overflow-hidden bg-slate-100 border border-teal-100 h-[90%] relative mt-12 shadow-2xl shadow-teal-900/10">
+                        <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="Studio Experience 3" class="w-full h-full object-cover hover:scale-110 transition-all duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-teal-900/20 to-transparent mix-blend-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 9: PROCESS -->
+    <section id="process" class="py-32 bg-slate-50 border-y border-teal-100/50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 mb-4 uppercase">Der Weg auf unsere Bühne</h2>
+                <p class="text-lg text-slate-500 font-medium">In vier einfachen Schritten zu Deinem Fachvortrag.</p>
+            </div>
+
+            <div class="relative">
+                <!-- Connecting line (desktop) -->
+                <div class="hidden md:block absolute top-8 left-[10%] right-[10%] h-1 bg-teal-100 z-0 rounded-full"></div>
+
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-12 relative z-10">
+                    <!-- Step 1 -->
+                    <div class="text-center group">
+                        <div class="w-16 h-16 mx-auto bg-white border-2 border-teal-100 rounded-full flex items-center justify-center text-xl font-black text-teal-600 mb-8 shadow-lg shadow-teal-900/5 group-hover:bg-teal-600 group-hover:text-white group-hover:border-teal-600 transition-all duration-500">
+                            1</div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-3 uppercase tracking-tight">Bewerbung</h3>
+                        <p class="text-sm text-slate-500 font-medium px-4">Kurzes Formular ausfüllen und Dein Thema skizzieren.</p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="text-center group">
+                        <div class="w-16 h-16 mx-auto bg-white border-2 border-teal-100 rounded-full flex items-center justify-center text-xl font-black text-teal-600 mb-8 shadow-lg shadow-teal-900/5 group-hover:bg-teal-600 group-hover:text-white group-hover:border-teal-600 transition-all duration-500">
+                            2</div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-3 uppercase tracking-tight">Review</h3>
+                        <p class="text-sm text-slate-500 font-medium px-4">Unsere Redaktion prüft die Relevanz für die Community.</p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="text-center group">
+                        <div class="w-16 h-16 mx-auto bg-white border-2 border-teal-100 rounded-full flex items-center justify-center text-xl font-black text-teal-600 mb-8 shadow-lg shadow-teal-900/5 group-hover:bg-teal-600 group-hover:text-white group-hover:border-teal-600 transition-all duration-500">
+                            3</div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-3 uppercase tracking-tight">Produktion</h3>
+                        <p class="text-sm text-slate-500 font-medium px-4">Gemeinsame Aufzeichnung im Studio oder Remote.</p>
+                    </div>
+                    <!-- Step 4 -->
+                    <div class="text-center group">
+                        <div class="w-16 h-16 mx-auto bg-teal-600 border-2 border-teal-600 rounded-full flex items-center justify-center text-xl font-black text-white mb-8 shadow-xl shadow-teal-500/40">
+                            4</div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-3 uppercase tracking-tight">Release</h3>
+                        <p class="text-sm text-slate-500 font-medium px-4">Veröffentlichung und Promotion in unserem Netzwerk.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 10: PUBLICATION EXCELLENCE -->
+    <section class="py-32">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="bg-teal-900 rounded-[3rem] overflow-hidden relative shadow-2xl shadow-teal-900/20">
+                <div class="absolute inset-0 bg-noise opacity-10"></div>
+                <div class="absolute inset-0 bg-gradient-to-r from-teal-950/80 to-transparent"></div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-2 items-center">
+                    <div class="p-12 md:p-20 relative z-10">
+                        <iconify-icon icon="solar:videocamera-record-bold" class="text-5xl text-teal-400 mb-8"></iconify-icon>
+                        <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight text-white mb-8 leading-tight uppercase">
+                            Dein Vortrag auf <span class="text-teal-400">afs://+</span>
+                        </h2>
+                        <p class="text-lg text-teal-50/80 mb-10 font-medium max-w-lg leading-relaxed">
+                            Deine Expertise verdient die beste Plattform. Wir integrieren Deinen Vortrag nahtlos in unser hochkarätiges Content-Ökosystem.
+                        </p>
+                        <ul class="space-y-4 mb-12">
+                            <li class="flex items-center gap-3 text-white font-bold uppercase tracking-widest text-xs">
+                                <iconify-icon icon="solar:check-circle-bold" class="text-teal-400 text-xl"></iconify-icon>
+                                4K Master-Qualität
+                            </li>
+                            <li class="flex items-center gap-3 text-white font-bold uppercase tracking-widest text-xs">
+                                <iconify-icon icon="solar:check-circle-bold" class="text-teal-400 text-xl"></iconify-icon>
+                                Interaktive Lerninhalte
+                            </li>
+                            <li class="flex items-center gap-3 text-white font-bold uppercase tracking-widest text-xs">
+                                <iconify-icon icon="solar:check-circle-bold" class="text-teal-400 text-xl"></iconify-icon>
+                                Exklusive Mitglieder-Area
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="h-full min-h-[400px] relative">
+                        <img src="imgs/2/mediadaten-sponsoring-grafik.svg"
+                            alt="Platform UI" class="w-full h-full object-contain p-12">
+                        <div class="absolute inset-0 bg-teal-900/10 mix-blend-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 11: EXTRA OPPORTUNITIES -->
+    <section class="py-32 bg-slate-50/50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 mb-4 uppercase">Weitere Möglichkeiten</h2>
+                <p class="text-lg text-slate-500 font-medium">Bringe Dich auf verschiedenen Ebenen in unsere Community ein.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <!-- Card 1 -->
+                <div class="bg-white border border-teal-100 rounded-[2.5rem] overflow-hidden group hover:shadow-2xl hover:shadow-teal-900/10 transition-all duration-500">
+                    <div class="h-64 relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="Editorial" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-teal-900/20 group-hover:bg-transparent transition-colors"></div>
+                        <div class="absolute bottom-6 left-6 bg-white/90 backdrop-blur-md px-4 py-2 rounded-full border border-white text-[10px] font-black text-teal-900 uppercase tracking-widest">
+                            Editorial
+                        </div>
+                    </div>
+                    <div class="p-12">
+                        <h3 class="text-2xl font-black text-slate-900 mb-4 tracking-tight uppercase">Fachartikel veröffentlichen</h3>
+                        <p class="text-slate-600 font-medium mb-8 leading-relaxed">Platziere tiefgehende Insights als geschriebenen Artikel in unserem Journal und erreiche Entscheider direkt über unseren Newsletter.</p>
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-3">
+                                <iconify-icon icon="solar:pen-bold" class="text-teal-500"></iconify-icon>
+                                <span class="text-sm font-bold text-slate-700 uppercase tracking-tight">Ghostwriting Support</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <iconify-icon icon="solar:mailbox-bold" class="text-teal-500"></iconify-icon>
+                                <span class="text-sm font-bold text-slate-700 uppercase tracking-tight">Newsletter Feature</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white border border-teal-100 rounded-[2.5rem] overflow-hidden group hover:shadow-2xl hover:shadow-teal-900/10 transition-all duration-500">
+                    <div class="h-64 relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1559523161-0fc0d8b38a7a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="Podcast" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-teal-900/20 group-hover:bg-transparent transition-colors"></div>
+                        <div class="absolute bottom-6 left-6 bg-white/90 backdrop-blur-md px-4 py-2 rounded-full border border-white text-[10px] font-black text-teal-900 uppercase tracking-widest">
+                            Podcast
+                        </div>
+                    </div>
+                    <div class="p-12">
+                        <h3 class="text-2xl font-black text-slate-900 mb-4 tracking-tight uppercase">Im Interview</h3>
+                        <p class="text-slate-600 font-medium mb-8 leading-relaxed">Lass Dich von unseren Hosts zu aktuellen Branchenthemen interviewen – ein dynamisches Format für maximale Nahbarkeit.</p>
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-3">
+                                <iconify-icon icon="solar:microphone-bold" class="text-teal-500"></iconify-icon>
+                                <span class="text-sm font-bold text-slate-700 uppercase tracking-tight">Audio & Video Format</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <iconify-icon icon="solar:clapperboard-edit-bold" class="text-teal-500"></iconify-icon>
+                                <span class="text-sm font-bold text-slate-700 uppercase tracking-tight">Short-Form Content inkl.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 12: FAQ -->
+    <section id="faq" class="py-32 bg-white">
+        <div class="max-w-3xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-extrabold tracking-tight text-slate-900 mb-4 uppercase">Häufige Fragen</h2>
+                <p class="text-lg text-slate-500 font-medium">Alles, was Du vor Deiner Bewerbung wissen musst.</p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ Item -->
+                <details class="group bg-slate-50 border border-teal-100 rounded-3xl overflow-hidden shadow-sm shadow-teal-900/5">
+                    <summary class="flex items-center justify-between p-8 cursor-pointer text-lg font-bold text-slate-900 hover:text-teal-600 transition-colors">
+                        Kostet es etwas, Speaker zu werden?
+                        <iconify-icon icon="solar:alt-arrow-down-bold" class="text-teal-500 group-open:rotate-180 transition-transform"></iconify-icon>
+                    </summary>
+                    <div class="px-8 pb-8 text-base text-slate-600 font-medium leading-relaxed border-t border-teal-100 pt-6">
+                        Nein. Wir verlangen keine Gebühren von unseren Speakern. Im Gegenteil: Du investierst Deine Zeit und Expertise, wir investieren in die Produktion und Vermarktung Deines Contents.
+                    </div>
+                </details>
+
+                <!-- FAQ Item -->
+                <details class="group bg-slate-50 border border-teal-100 rounded-3xl overflow-hidden shadow-sm shadow-teal-900/5">
+                    <summary class="flex items-center justify-between p-8 cursor-pointer text-lg font-bold text-slate-900 hover:text-teal-600 transition-colors">
+                        Wie lang sollte ein Vortrag sein?
+                        <iconify-icon icon="solar:alt-arrow-down-bold" class="text-teal-500 group-open:rotate-180 transition-transform"></iconify-icon>
+                    </summary>
+                    <div class="px-8 pb-8 text-base text-slate-600 font-medium leading-relaxed border-t border-teal-100 pt-6">
+                        Idealerweise zwischen 20 und 45 Minuten. Unser Fokus liegt auf hoher Informationsdichte ohne Längen. Qualität geht immer vor Quantität.
+                    </div>
+                </details>
+
+                <!-- FAQ Item -->
+                <details class="group bg-slate-50 border border-teal-100 rounded-3xl overflow-hidden shadow-sm shadow-teal-900/5">
+                    <summary class="flex items-center justify-between p-8 cursor-pointer text-lg font-bold text-slate-900 hover:text-teal-600 transition-colors">
+                        Behalte ich die Rechte an meinem Inhalt?
+                        <iconify-icon icon="solar:alt-arrow-down-bold" class="text-teal-500 group-open:rotate-180 transition-transform"></iconify-icon>
+                    </summary>
+                    <div class="px-8 pb-8 text-base text-slate-600 font-medium leading-relaxed border-t border-teal-100 pt-6">
+                        Selbstverständlich. Du gewährst uns lediglich ein Nutzungsrecht für unsere Plattform. Du kannst Dein Wissen weiterhin uneingeschränkt anderswo teilen.
+                    </div>
+                </details>
+
+                <!-- FAQ Item -->
+                <details class="group bg-slate-50 border border-teal-100 rounded-3xl overflow-hidden shadow-sm shadow-teal-900/5">
+                    <summary class="flex items-center justify-between p-8 cursor-pointer text-lg font-bold text-slate-900 hover:text-teal-600 transition-colors">
+                        Darf ich in meinem Vortrag pitchen?
+                        <iconify-icon icon="solar:alt-arrow-down-bold" class="text-teal-500 group-open:rotate-180 transition-transform"></iconify-icon>
+                    </summary>
+                    <div class="px-8 pb-8 text-base text-slate-600 font-medium leading-relaxed border-t border-teal-100 pt-6">
+                        Nein, direkter Sales-Pitch ist bei uns nicht gestattet. Wir glauben fest daran, dass Expertise der beste Pitch ist. Wer echten Mehrwert liefert, wird automatisch Anfragen erhalten.
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 13: FINAL CTA -->
+    <section id="apply" class="py-40 relative overflow-hidden bg-teal-50/50">
+        <!-- Background decorative wave -->
+        <div class="absolute bottom-0 left-0 w-full h-1/2 bg-teal-600 rounded-t-[50%] opacity-5 -mb-20"></div>
+
+        <div class="relative z-10 max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-5xl md:text-7xl font-extrabold tracking-tight text-slate-900 mb-8 leading-tight">
+                DIE CHANCE LASS ICH MIR <br> NICHT ENTGEHEN.
+            </h2>
+            <p class="text-xl text-slate-500 mb-16 font-medium max-w-2xl mx-auto">
+                Bewirb Dich jetzt als Speaker und teile Deine Bühne mit den Vordenkern der digitalen Wirtschaft.
+            </p>
+
+            <form class="bg-white border border-teal-100/50 p-12 rounded-[3.5rem] max-w-xl mx-auto text-left shadow-[0_30px_100px_rgba(13,148,136,0.12)]">
+                <div class="space-y-6">
+                    <div>
+                        <label class="block text-[10px] font-black text-slate-400 uppercase tracking-widest mb-2 px-1">Name</label>
+                        <input type="text" placeholder="Vor- und Nachname"
+                            class="w-full bg-slate-50 border-2 border-slate-50 rounded-2xl px-6 py-4 text-slate-900 focus:outline-none focus:border-teal-500 focus:bg-white transition-all font-medium placeholder:text-slate-400">
+                    </div>
+                    <div>
+                        <label class="block text-[10px] font-black text-slate-400 uppercase tracking-widest mb-2 px-1">LinkedIn Profil</label>
+                        <input type="url" placeholder="https://linkedin.com/in/..."
+                            class="w-full bg-slate-50 border-2 border-slate-50 rounded-2xl px-6 py-4 text-slate-900 focus:outline-none focus:border-teal-500 focus:bg-white transition-all font-medium placeholder:text-slate-400">
+                    </div>
+                    <div>
+                        <label class="block text-[10px] font-black text-slate-400 uppercase tracking-widest mb-2 px-1">Themenvorschlag (Kurz)</label>
+                        <textarea rows="4" placeholder="Worum soll es in Deinem Vortrag gehen?"
+                            class="w-full bg-slate-50 border-2 border-slate-50 rounded-2xl px-6 py-4 text-slate-900 focus:outline-none focus:border-teal-500 focus:bg-white transition-all font-medium placeholder:text-slate-400 resize-none"></textarea>
+                    </div>
+                    <button type="button"
+                        class="w-full bg-teal-600 text-white font-black text-sm py-5 rounded-2xl mt-4 hover:bg-teal-700 transition-all shadow-xl shadow-teal-500/20 uppercase tracking-widest">
+                        Jetzt Pitch einreichen
+                    </button>
+                    <p class="text-[10px] text-center text-slate-400 mt-6 font-bold uppercase tracking-widest">
+                        Dies ist der erste unverbindliche Schritt.
+                    </p>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-white text-center border-t border-teal-50">
+        <div class="flex justify-center gap-8 mb-8 opacity-40">
+            <a href="#" class="hover:opacity-100 transition-opacity"><iconify-icon icon="solar:camera-bold" class="text-xl"></iconify-icon></a>
+            <a href="#" class="hover:opacity-100 transition-opacity"><iconify-icon icon="solar:share-circle-bold" class="text-xl"></iconify-icon></a>
+            <a href="#" class="hover:opacity-100 transition-opacity"><iconify-icon icon="solar:letter-bold" class="text-xl"></iconify-icon></a>
+        </div>
+        <p class="text-[10px] text-slate-400 font-black uppercase tracking-[0.2em]">
+            © 2026 afs:// Akademie. Premium Education for Digital Minds.
+        </p>
+    </footer>
+
+</body>
+
+</html>
